@@ -117,6 +117,96 @@
 @ts-color-slate-dark: darken(@ts-color-slate, 5%);
 @ts-color-slate-darker: darken(@ts-color-slate, 10%);
 
+@ts-v10-colors: {
+	// black and white
+	black: rgb(30, 30, 30);
+	white: rgb(255, 255, 255);
+
+	// dark grey
+	dark-liter: rgb(73, 73, 73);
+	dark-lite: rgb(63, 63, 63);
+	dark: rgb(53, 53, 53);
+	dark-dark: rgb(43, 43, 43);
+	dark-darker: rgb(33, 33, 33);
+
+	// medium grey
+	medium-litest: rgb(175, 175, 175);
+	medium-liter: rgb(147, 147, 147);
+	medium-lite: rgb(137, 137, 137);
+	medium: rgb(127, 127, 127);
+	medium-dark: rgb(117, 117, 117);
+	medium-darker: rgb(107, 107, 107);
+	medium-darkest: rgb(97, 97, 97);
+
+	// lite grey
+	lite-liter: rgb(245, 245, 245);
+	lite-lite: rgb(235, 235, 235);
+	lite: rgb(225, 225, 225);
+	lite-dark: rgb(215, 215, 215);
+	lite-darker: rgb(205, 205, 205);
+
+	// green
+	green-text: rgb(255, 255, 255);
+	green-lite: rgb(134, 197, 92);
+	green: rgb(114, 177, 72);
+	green-dark: rgb(94, 157, 52);
+	green-darker: rgb(74, 137, 32);
+
+	// blue
+	blue-text: rgb(255, 255, 255);
+	blue-liter: rgb(88, 184, 239);
+	blue-lite: rgb(43, 180, 253);
+	blue: rgb(32, 160, 233);
+	blue-dark: rgb(12, 140, 213);
+	blue-darker: rgb(0, 120, 193);
+
+	// pale blue
+	liteblue-dark: rgb(220, 241, 253);
+	liteblue: rgb(236, 247, 253);
+
+	// pale green
+	litegreen: rgb(178, 215, 130);
+
+	// dark blue
+	darkblue: rgb(24, 63, 84);
+	dustblue: rgb(54, 99, 117);
+
+	// dark green
+	darkgreen: rgb(24, 84, 63);
+
+	// red
+	red-text: rgb(255, 255, 255);
+	red-lite: rgb(231, 0, 0);
+	red: rgb(191, 0, 0);
+	red-dark: rgb(171, 0, 0);
+	red-darker: rgb(151, 0, 0);
+
+	// dark red
+	darkred-text: rgb(255, 255, 255);
+	darkred-lite: rgb(248, 229, 229);
+	darkred: rgb(233, 32, 32);
+
+	// yellow
+	yellow-text: rgb(127, 115, 72);
+	yellow-dark: rgb(244, 242, 201);
+	yellow: rgb(253, 254, 213);
+
+	// orange
+	orange-text: rgb(255, 255, 255);
+	orange-liter: rgb(250, 236, 217);
+	orange-lite: rgb(245, 225, 184);
+	orange: rgb(230, 153, 0);
+	orange-dark: rgb(209, 91, 0);
+	orange-darker: rgb(66, 40, 0);
+
+	// purple
+	purple-text: rgb(255, 255, 255);
+	purple-lite: rgb(166, 58, 224);
+	purple: rgb(148, 52, 200);
+	purple-dark: rgb(128, 45, 173);
+	purple-darker: rgb(108, 25, 153);
+}
+
 // Map color to new values (extracted from v11)
 
 @ts-colors: {
@@ -130,6 +220,7 @@
 	dark: @ts-color-slate;
 	dark-dark: @ts-color-slate-dark;
 	dark-darker: @ts-color-slate-darker;
+
 	medium-litest: @ts-color-gray;
 	medium-liter: @ts-color-gray-darker;
 	medium-lite: lighten(@ts-color-slate-lightest, 13%);
@@ -137,6 +228,7 @@
 	medium-dark: lighten(@ts-color-slate-lightest, 5%);
 	medium-darker: @ts-color-slate-lightest;
 	medium-darkest: lighten(@ts-color-slate-lightest, 3%);
+
 	lite-liter: @ts-color-gray-lightest;
 	lite-lite: @ts-color-gray-lighter;
 	lite: lighten(@ts-color-gray, 15%);
@@ -159,8 +251,10 @@
 	blue: @ts-color-blue;
 	blue-dark: @ts-color-blue-dark;
 	blue-darker: @ts-color-blue-darker;
+
 	darkblue: darken(desaturate(@ts-color-blue-darker, 50%), 10%);
 	dustblue: desaturate(@ts-color-blue-darker, 70%);
+
 	liteblue-dark: @ts-color-blue-lightest;
 	liteblue: lighten(@ts-color-blue-lightest, 5%);
 

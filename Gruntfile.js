@@ -349,7 +349,7 @@ module.exports = function(grunt) {
 				files: ['src/**/*.js', 'src/**/*.json']
 			},
 			less: {
-				tasks: [].concat(compileAndMinifyLess('dev'), ['tsless:dev']),
+				tasks: [].concat(compileAndMinifyLess('dev'), ['tsless:dev', 'copy:docs_dev']),
 				files: ['src/runtime/less/**/*.less']
 			},
 			edbml: {

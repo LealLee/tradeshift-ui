@@ -19,16 +19,19 @@
 									<table>
 										colors.forEach(function(set) {
 											<tr>
-											for (var name in set) {
-												var color = set[name];
-												@style = 'background-color: ' + color.rgb;
-												@class = color.darkClass;
-												<td @style @class>
-													<code class="color-name">${name}</code>
-													<br/>
-													<code class="color-code">${color.hex}<br/>${color.rgb}<br/>${color.hsl}</code>
-												</td>
-											}
+												if (set.length) {
+													set.forEach(function(color) {
+														@style = 'background-color: ' + color.rgb;
+														@class = color.darkClass;
+														<td @style @class>
+															<code class="color-name">${color.name}</code>
+															<br/>
+															<code class="color-code">${color.hex}<br/>${color.rgb}<br/>${color.hsl}</code>
+														</td>
+													})
+												} else {
+													<td></td>
+												}
 											</tr>
 										});
 									</table>
